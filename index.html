@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      background-color: #000; /* پس‌زمینه مشکی */
+      background-color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,22 +19,19 @@
       display: block;
       width: 100%;
       height: auto;
-      max-width: 800px; /* حداکثر اندازه‌ی نمایش در مانیتورهای بزرگ */
+      max-width: 800px;
       object-fit: contain;
       margin: 0 auto;
     }
 
-    /* فاصله بین عکس‌ها */
     .menu + .menu {
       margin-top: 20px;
     }
 
-    /* برای اسکرول نرم‌تر */
     html {
       scroll-behavior: smooth;
     }
 
-    /* جلوگیری از انتخاب متن یا highlight */
     img {
       user-select: none;
       -webkit-user-drag: none;
@@ -42,10 +39,8 @@
   </style>
 </head>
 <body>
-  <!-- عکس‌ها رو به ترتیب بزار -->
-  <img src="https://raw.githubusercontent.com/panda-piza/menu/main/p2%20copy.jpg" alt="منوی فست‌فود" class="menu">
-  <img src="https://raw.githubusercontent.com/panda-piza/menu/main/p3%20copy.jpg" alt="منوی نوشیدنی‌ها" class="menu">
-  <img src="https://raw.githubusercontent.com/panda-piza/menu/main/p4%20copy.jpg" alt="منوی دسرها" class="menu">
-  <!-- هر تعداد خواستی اضافه کن -->
+  <img src="https://raw.githubusercontent.com/panda-piza/menu/main/p2%20copy.jpg" alt="منوی فست‌فود" class="menu" loading="lazy">
+  <img src="https://raw.githubusercontent.com/panda-piza/menu/main/p3%20copy.jpg" alt="منوی نوشیدنی‌ها" class="menu" loading="lazy">
+  <img src="https://raw.githubusercontent.com/panda-piza/menu/main/p4%20copy.jpg" alt="منوی دسرها" class="menu" loading="lazy">
 </body>
 </html>
