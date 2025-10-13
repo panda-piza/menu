@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منوی فست‌فود</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000; /* پس‌زمینه مشکی */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    img.menu {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 800px; /* حداکثر اندازه‌ی نمایش در مانیتورهای بزرگ */
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    /* فاصله بین عکس‌ها */
+    .menu + .menu {
+      margin-top: 20px;
+    }
+
+    /* برای اسکرول نرم‌تر */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* جلوگیری از انتخاب متن یا highlight */
+    img {
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- عکس‌ها رو به ترتیب بزار -->
+  <img src="menu1.jpg" alt="منوی فست‌فود" class="menu">
+  <img src="menu2.jpg" alt="منوی نوشیدنی‌ها" class="menu">
+  <img src="menu3.jpg" alt="منوی دسرها" class="menu">
+  <!-- هر تعداد خواستی اضافه کن -->
+</body>
+</html>
